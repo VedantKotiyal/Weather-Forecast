@@ -1,0 +1,147 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(11, 19, 30);
+    --bgc2:rgb(32, 43, 59);
+    letter-spacing: 2px;
+    color: white;
+}
+.setbg{
+    background-color: var(--bgc2);
+}
+.nobg{
+    background: none;
+}
+::placeholder{
+    color: grey;
+}
+.txt{
+    position: relative;
+    left: 4px;
+    font-size: 2vmin;
+    color: darkgrey;
+}
+.upper_text{
+    margin-bottom: 10px;
+    background: none;
+    font-size: 1.5vmin;
+    letter-spacing: 3px;
+    color: silver;
+}
+header{
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+#search{
+    background-color: var(--bgc2);
+    width: 60vw;
+    height: 6vh;
+    font-size: 3vmin;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+main{
+    display: flex;
+    margin: 15px;
+    gap: 15px;
+}
+.today_forecast{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 64vw;
+}
+.realtime{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+#location{
+    font-size: 8vmin;
+    text-transform: capitalize;
+}
+#rain{
+    font-size: 3vmin;
+}
+#temperature{
+    font-size: 7vmin;
+}
+#temperature>sup{
+    font-size: 5vmin;
+}
+#image{
+    width: 25vmin;
+    height: 25vmin;
+}
+.time_based{
+    padding: 20px;
+    border-radius: 10px;
+}
+.time_based_lower{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 8px;
+}
+/* @media(max-width:530px)
+{
+    .today{
+        flex-direction: column;
+    }
+} */
+.divisions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temp{
+    font-size: 3vmin;
+}
+.v-line{
+    width: 1px;
+}
+.air_condition{
+    padding: 20px;
+    border-radius: 10px;
+}
+.air_condition_lower{
+    display: flex;
+    justify-content: space-around;
+}
+.alignitem{
+    display: flex;
+    align-items: center;
+}
+#realfeel, #wind, #rainposs, #uvindex{
+    position: relative;
+    left:35px;
+    font-size: 4vmin;
+}
+.upcoming_forecast{
+    padding: 20px;
+    width: 35vw;
+    border-radius: 10px;
+}
+.upcoming_lower{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.upcoming_lower>div{
+    display: flex;
+    flex-direction: column;
+    font-size: 3vmin;
+    gap: 40px;
+}
+#forecast{
+    display: flex;
+    flex-direction: column;
+}
+.hide{
+    display: none;
+}

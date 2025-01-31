@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="icon" href="icons/logo.svg">
+    <link rel="stylesheet" href="StyleWeather.css">
+</head>
+<body>
+    <header>
+        <input type="text" placeholder="Search for city" class="nobg" id="search" autocomplete="off">
+    </header>
+    <main>
+        <div class="today_forecast hide">
+            <div class="realtime">
+                <div>
+                    <div id="location"></div>
+                    <div id="rain"></div>
+                    <div id="temperature"><sup>o</sup>C</div>
+                </div>
+                <img src="" alt="" id="image">
+            </div>
+            <div class="time_based setbg">
+                <div class="upper_text">Today's Forecast</div>
+                <div class="time_based_lower nobg">
+                    <div class="divisions nobg">
+                        <span class="txt nobg">12:00AM</span>
+                        <img src="" alt="" class="icon nobg">
+                        <div class="temp nobg"><sup class="nobg">o</sup>C</div>
+                    </div>
+                    <div class="v-line"></div>
+                    <div class="divisions nobg">
+                        <span class="txt nobg">06:00AM</span>
+                        <img src="" alt="" class="icon nobg">
+                        <div class="temp nobg"><sup class="nobg">o</sup>C</div>
+                    </div>
+                    <div class="v-line"></div>
+                    <div class="divisions nobg">
+                        <span class="txt nobg">12:00PM</span>
+                        <img src="" alt="" class="icon nobg">
+                        <div class="temp nobg"><sup class="nobg">o</sup>C</div>
+                    </div>
+                    <div class="v-line"></div>
+                    <div class="divisions nobg">
+                        <span class="txt nobg">06:00PM</span>
+                        <img src="" alt="" class="icon nobg">
+                        <div class="temp nobg"><sup class="nobg">o</sup>C</div>
+                    </div>
+                    <div class="v-line"></div>
+                    <div class="divisions nobg">
+                        <span class="txt nobg">12:00AM</span>
+                        <img src="" alt="" class="icon nobg">
+                        <div class="temp nobg"><sup class="nobg">o</sup>C</div>
+                    </div>
+                </div>
+            </div>
+            <div class="air_condition setbg">
+                <div class="upper_text">Air Conditions</div>
+                <div class="air_condition_lower nobg">
+                    <div class="nobg">
+                        <div class="nobg">
+                            <div class="alignitem nobg">
+                                <img src="icons/scale.svg" alt="" class="nobg">
+                                <span class="txt nobg">Real Feal</span>
+                            </div>
+                            <span class="nobg" id="realfeel"><sup class="nobg">o</sup>C</span>
+                        </div>
+                        <div class="nobg">
+                            <div class="alignitem nobg">
+                                <img src="icons/raindrop.svg" alt="" class="nobg">
+                                <span class="txt nobg">Rain Possibility</span>
+                            </div>
+                            <span class="nobg" id="rainposs"></span>
+                        </div>
+                    </div>
+                    <div class="nobg">
+                        <div class="nobg">
+                            <div class="alignitem nobg">
+                                <img src="icons/wind.svg" alt="" class="nobg">
+                                <span class="txt nobg">Wind Speed</span>
+                            </div>
+                            <span class="nobg" id="wind"></span> 
+                        </div>
+                        <div class="nobg">
+                            <div class="alignitem nobg">
+                                <img src="icons/sun.svg" alt="" class="nobg">
+                                <span class="txt nobg">UV Index</span>
+                            </div>
+                            <span class="nobg" id="uvindex"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upcoming_forecast setbg hide">
+            <div class="upper_text">3 Days Forecast</div>
+            <div class="upcoming_lower nobg">
+                <div class="nobg">
+                    <div class="days nobg">Today</div>
+                    <div class="days nobg"></div>
+                    <div class="days nobg"></div>
+                </div>
+                <div class="nobg">
+                    <div id="forecast" class="nobg">
+                        <img src="" alt="" class="forecast_icons nobg">
+                        <img src="" alt="" class="forecast_icons nobg">
+                        <img src="" alt="" class="forecast_icons nobg">
+                    </div>
+                </div>
+                <div class="nobg">
+                    <div class="conditions nobg"></div>
+                    <div class="conditions nobg"></div>
+                    <div class="conditions nobg"></div>
+                </div>
+                <div class="nobg">
+                    <div class="maxmins nobg"></div>
+                    <div class="maxmins nobg"></div>
+                    <div class="maxmins nobg"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="logic.js"></script>
+</body>
+</html>

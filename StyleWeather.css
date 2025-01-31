@@ -138,6 +138,9 @@ main{
     font-size: 3vmin;
     gap: 40px;
 }
+.conditions{
+    text-align: center;
+}
 #forecast{
     display: flex;
     flex-direction: column;

@@ -19,14 +19,17 @@ document.querySelector("#search").addEventListener("keydown",async(event)=>{
 			document.querySelector("#image").src=`https:${details.current.condition.icon}`;
 
 			let temps=document.querySelectorAll(".temp");
-			temps.forEach((temp,i=0)=>{
-				temp.innerHTML="";
-				temp.innerHTML=`${details.forecast.forecastday[0].hour[i+=6].temp_c}`+temp.innerHTML;
+			var i=5;
+			temps.forEach((temp)=>{
+				temp.innerHTML=`${details.forecast.forecastday[0].hour[i].temp_c}<sup class="nobg">o</sup>C`;
+				i+=6;
 			});
 				
 			let icons=document.querySelectorAll(".icon");
-			icons.forEach((icon,i=5)=>{
-				icon.src=`https:${details.forecast.forecastday[0].hour[i+=6].condition.icon}`;
+			i=5;
+			icons.forEach((icon)=>{
+				icon.src=`https:${details.forecast.forecastday[0].hour[i].condition.icon}`;
+				i+=6;
 			});
 				
 			document.querySelector("#realfeel").innerHTML="";
@@ -37,7 +40,7 @@ document.querySelector("#search").addEventListener("keydown",async(event)=>{
 
 			let day=["Mon","Tues","Wed","Thurs","Fri","Sat","Sun"];
 			let days=document.querySelectorAll(".days");
-			let i=(new Date()).getDay();
+			i=(new Date()).getDay();
 			days[1].innerHTML=`${day[i++]}`;
 			if(i==7)
 				i=0;
